@@ -1,0 +1,8 @@
+# Create env
+py -m venv env
+
+# Activate the env
+source env/scripts/activate
+
+# Create executable file of the script
+pyinstaller --onefile --add-data "Images;Images" main.py
