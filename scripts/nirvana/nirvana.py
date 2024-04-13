@@ -133,6 +133,13 @@ def lootChest():
      pyautogui.click()
      time.sleep(3)
 
+def resetNirv():
+     global counter
+     if counter >= 10:
+          pyautogui.type("::nirv")
+          time.sleep(2)
+          pyautogui.press('enter')
+
 def main():
     global counter
     print('Running nirvana bot in 5 seconds.')
@@ -140,6 +147,8 @@ def main():
     adjustCameraZoomOut()
     time.sleep(2)
     while True:
+        resetNirv()
+        time.sleep(10)
         enterLobbyDoor()
         time.sleep(3)
         enterFirstBossDoor()
