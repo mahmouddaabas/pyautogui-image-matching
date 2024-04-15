@@ -136,7 +136,7 @@ def lootChest():
 def resetNirv():
      global counter
      if counter >= 10:
-          pyautogui.type("::nirv")
+          pyautogui.write("::nirv")
           time.sleep(2)
           pyautogui.press('enter')
 
