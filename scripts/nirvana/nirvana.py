@@ -139,6 +139,7 @@ def resetNirv():
           pyautogui.write("::nirv")
           time.sleep(2)
           pyautogui.press('enter')
+          time.sleep(10)
 
 def main():
     global counter
@@ -148,7 +149,7 @@ def main():
     time.sleep(2)
     while True:
         resetNirv()
-        time.sleep(10)
+        time.sleep(3)
         enterLobbyDoor()
         time.sleep(3)
         enterFirstBossDoor()
