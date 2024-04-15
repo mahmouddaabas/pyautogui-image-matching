@@ -136,6 +136,7 @@ def lootChest():
 def resetNirv():
      global counter
      if counter >= 10:
+          counter = 0
           pyautogui.write("::nirv")
           time.sleep(2)
           pyautogui.press('enter')
@@ -171,7 +172,7 @@ def main():
         lootChest()
         time.sleep(3)
         counter+=1
-        print('The bot has completed: ' + str(counter) + " nirvana runs.")
+        print('The bot has completed: ' + str(counter) + " nirvana runs. It will reset after 10 runs.")
 
 main()
 
